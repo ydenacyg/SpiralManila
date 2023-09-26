@@ -1,0 +1,163 @@
+/* HEADER */
+.social-icons {
+  font-size: 23px;
+}
+
+/* HOME PAGE */
+.hero-sidebar {
+  position: relative;
+  background: url("../img/hero-chef-bg.jpg") 70% / cover no-repeat, rgba(255, 255, 255, 0.808);
+}
+
+.hero-sidebar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: inherit;
+}
+
+.hero-content,
+.carousel-inner::before,
+.hero-chef {
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    8deg,
+    #cbb698 25.46%,
+    rgba(228, 211, 168, 0) 83.72%
+  );
+}
+
+.hero-chef > img {
+  height: 35vw;
+  width: auto;
+}
+
+.card {
+  position: relative;
+  height: 10rem;
+}
+
+img.card-img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-title {
+  text-align: right;
+}
+
+.event-light {
+    background: url("../img/event-light-bg.jpg") 60% / cover no-repeat;
+}
+
+.event-dark {
+    background: url("../img/event-dark-bg.jpg") 60% / cover no-repeat;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+.bottom-footer {
+  color: white; /* for the meantime */
+  background-image: url("../img/footer-image.png");
+}
+.inline-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.inline-nav li {
+  display: inline-block;
+  margin-right: 15px; 
+}
+
+.inline-nav li:not(:last-child)::after {
+  content: '|';
+  margin-left: 7px; 
+  color: white;
+}
+
+form * p, h4, label {
+  font-family: var(--text-san-serif);
+}
+
+.form-control, hr {
+  color: white !important;
+}
+
+/* sm */
+@media (max-width: 575.98px) {
+  /* a.nav-link.text-san-serif {
+    color: black !important;
+} */
+}
+
+/* md */
+@media (max-width: 767.98px) {
+}
+
+/* lg */
+@media (max-width: 991.98px) {
+}
+
+/* xl */
+@media (max-width: 1199.98px) {
+/* HEADER */
+  .contact-details {
+    display: none;
+  }
+
+  a.nav-link {
+    color: black !important;
+}
+
+/* HOME PAGE */
+  .hero,
+  .hero-sidebar, .carousel {
+    height: 600px;
+  }
+
+  nav {
+    background-image: url("../img/paper.jpg");
+  }
+
+  .carousel-inner::before {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  .carousel-item img {
+    height: 500px;
+    width: auto;
+  }
+
+  .hero-chef {
+    overflow: hidden; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .hero-chef img {
+    transform: scale(1.5); 
+    transform-origin: top center;
+    height: 550px;
+  }
+}
+
+/* xxl */
+@media (max-width: 1399.98px) {
+ 
+}

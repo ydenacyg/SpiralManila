@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- font-awesome icons -->
+	<script src="https://kit.fontawesome.com/2f82e7e36d.js" crossorigin="anonymous"></script>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+		rel="stylesheet" />
+
+	<!-- custom script and css -->
+	<script type="text/javascript" src="../js/script.js" defer></script>
+	<script type="text/javascript" src="../js/jquery.min.js" defer></script>
+	<link href="css/global.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Include Bootstrap Datepicker CSS -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+	<!-- Include Bootstrap Datepicker JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+	 <!-- Include Bootstrap Timepicker CSS -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
+
+	<!-- Include Bootstrap Timepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<nav class="navbar navbar-light navbar-expand-xl bg-transparent fixed-top text-white p-0" data-bs-theme="light">
+		<div class="container-fluid">
+			<a href="#">
+				<img src="img/sofitel-logo.png" alt="Logo">
+			</a>
+
+			<div class="row header-info justify-content-end">
+				<div class="col-6"></div>
+				<div class="col-6 contact-details justify-content-end mr-5">
+					<div class="d-flex justify-content-end gap-4">
+						<div class="d-flex justify-content-end">
+							<p class="text-san-serif text-primaryColor">Tel: +63 (02) 8-573-5599</p>
+						</div>
+						<div class="d-flex justify-content-end">
+							<p class="text-san-serif text-primaryColor">H6308-FB12@sofitel.com</p>
+						</div>
+					</div>	
+				</div>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel" id="dropdownMenuButtonLight">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title text-san-serif" id="offcanvasNavbarLabel">Spiral</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body align-items-center">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active text-san-serif text-white" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-san-serif text-white" aria-current="page" href="#">The Chefs</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-san-serif text-white" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">The 21 dining ateliers</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item text-san-serif text-white" href="#">L’Ecailler</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Filipino</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Peking Duck Oven</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Salad and Appetizer</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Sushi Sashimi</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">L’Epicerie</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Hot Japanese</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">French Stove</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Rotisserie</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Wood Fired Oven</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Churrasco</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">North Indian</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Asian Noodles</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Chinese Wok</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Steam Baskets</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Thai</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Korean</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">La Boulangerie</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">La Patisserie</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Chocolate</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Creamery</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-san-serif text-white" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									Promos & Highlights
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Promos</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Heighlights</a></li>
+									<li><a class="dropdown-item text-san-serif text-white" href="#">Events</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active text-san-serif text-white" aria-current="page" href="#">Private Dining</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active text-san-serif text-white" aria-current="page" href="#">Dining Guidelines</a>
+							</li>
+						</ul>
+						<div class="social-icons d-flex gap-3">
+							<a href="#"><i class="fa-brands fa-facebook text-white"></i></a>
+							<a href="#"><i class="fa-brands fa-square-instagram text-white"></i></a>
+							<a href="#"><i class="fab fa-twitter text-white"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+	<!-- End Header -->
+
+	<!-- Page Content -->
+	<article class="page-content">
+		<section class="row d-flex p-0 position-relative">
+			<div class="hero col-xl-9 p-0 order-xl-2">
+				<div id="hero-carousel" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+					<div class="row hero-content text-white py-5">
+						<div class="col-6 d-none d-lg-block"></div>
+						<div class="hero-text col-12 col-lg-5 text-left text-lg-right text-lg-end p-5 p-lg-0">
+							<h1 class="text-shadow">Indulge in Culinary Artistry</h1>
+							<p class="text-shadow">Step into our world of culinary excellence, where every dish is a
+								masterpiece crafted
+								with the finest ingredients and utmost care at our opulent restaurant.</p>
+						</div>
+
+						<!-- Hero Featured Products on Desktop -->
+						<div class="hero-featured-promo gap-4 d-lg-flex d-none z-3 py-3">
+							<div class="card w-full text-bg-dark rounded-0 border-0">
+								<img src="../img/hero-ftured-promo1.jpg" class="card-img" alt="...">
+								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+									<h5 class="card-title text-shadow">Dive! at SPIRAL</h5>
+									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
+											More</small></a>
+								</div>
+							</div>
+
+							<div class="card w-full text-bg-dark rounded-0 border-0">
+								<img src="../img/hero-ftured-promo2.jpg" class="card-img" alt="...">
+								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+									<h5 class="card-title" text-shadow>Spiral Weekend Treat</h5>
+									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
+											More</small></a>
+								</div>
+							</div>
+
+							<div class="card w-full text-bg-dark rounded-0 border-0">
+								<img src="../img/hero-ftured-promo3.jpg" class="card-img" alt="...">
+								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+									<h5 class="card-title text-shadow">Promo Name</h5>
+									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
+											More</small></a>
+								</div>
+							</div>
+
+							<div class="card w-full text-bg-dark rounded-0 border-0">
+								<img src="../img/hero-ftured-promo4.jpg" class="card-img" alt="...">
+								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+									<h5 class="card-title text-shadow">Promo Name</h5>
+									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
+											More</small></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-inner z-0">
+						<div class="carousel-item active">
+							<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+				</div>
+			</div>
+			<aside class="hero-sidebar col-xl-3 d-flex flex-wrap align-content-xl-end order-xl-1 p-5">
+				<div class="row">
+					<div class="col-7 col-xl-9 z-2 p-0">
+						<p>“ Welcome to our restaurant, where our team of culinary experts is committed to delivering a
+							dining experience unlike any other. Our menu is carefully curated to showcase a variety of
+							culinary traditions, while also incorporating modern techniques and creative twists. ”</p>
+						<h6 class="text-tertiaryColor">Chef Bettina Argulles</h6>
+						<p class="m-0">Executive Chef</p>
+					</div>
+				</div>
+			</aside>
+			<div class="hero-chef col-xl-4 position-absolute bottom-0 d-flex justify-content-end z-3">
+				<img class="" src="../img/hero-chef.png" class="d-block mx-auto" alt="...">
+			</div>
+		</section>
+
+		<!-- Hero Featured Products on Mobile -->
+		<div class="hero-featured-promo d-flex flex-column gap-5 p-5 d-lg-none">
+			<div class="card h-50 text-bg-dark rounded-0 border-0">
+				<img src="../img/hero-ftured-promo1.jpg" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+					<h5 class="card-title">Dive! at SPIRAL</h5>
+					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+				</div>
+			</div>
+
+			<div class="card h-50 text-bg-dark rounded-0 border-0">
+				<img src="../img/hero-ftured-promo2.jpg" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+					<h5 class="card-title">Spiral Weekend Treat</h5>
+					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+				</div>
+			</div>
+
+			<div class="card h-50 text-bg-dark rounded-0 border-0">
+				<img src="../img/hero-ftured-promo3.jpg" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+					<h5 class="card-title">Promo Name</h5>
+					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+				</div>
+			</div>
+
+			<div class="card h-50 text-bg-dark rounded-0 border-0">
+				<img src="../img/hero-ftured-promo4.jpg" class="card-img" alt="...">
+				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+					<h5 class="card-title">Promo Name</h5>
+					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<section class="events row p-0">
+			<div class="event-light col-md-6 text-black p-5">
+				<div class="row">
+					<div
+						class="col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-lg-end flex-column">
+						<h3 class="text-tertiaryColor">July</h3>
+						<h2 class="fs-1 text-tertiaryColor">31</h2>
+					</div>
+					<div class="col-8 col-md-9 col-lg-8 d-flex flex-column flex-lg-column-reverse">
+						<h2 class="order-1 text-tertiaryColor">Sample Event Name</h2>
+						<p class="order-2">Sed ut tempus aliquam odio. Blandit quis nisl aliquam bibendum tincidunt
+							tortor feugiat
+							volutpat. Tincidunt cursus aliquet aenean fusce. Feugiat enim vestibulum pretium malesuada
+							convallis ornare iaculis pharetra.</p>
+					</div>
+				</div>
+			</div>
+			<div class="event-dark col-md-6 bg-black text-white  p-5">
+				<div class="row">
+					<div
+						class="col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-lg-end flex-column">
+						<h3 class="text-secondaryColor">July</h3>
+						<h2 class="fs-1 text-secondaryColor">31</h2>
+					</div>
+					<div class="col-8 col-md-9 col-lg-8 d-flex flex-column flex-lg-column-reverse">
+						<h2 class="order-1 text-secondaryColor">Sample Event Name</h2>
+						<p class="order-2">Sed ut tempus aliquam odio. Blandit quis nisl aliquam bibendum tincidunt
+							tortor feugiat
+							volutpat. Tincidunt cursus aliquet aenean fusce. Feugiat enim vestibulum pretium malesuada
+							convallis ornare iaculis pharetra.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</article>
+	<!-- End Page Content -->
+
+	<!-- Footer -->
+	<footer>
+		<section class="top-footer bg-body-secondary">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-7">
+						<h3>Stay in touch</h3>
+						<p>Subscribe to our newsletter to receive the latest news and exclusive offers every week.</p>
+					</div>
+					<div class="col-12 col-lg-5">
+						<form class="d-flex gap-3">
+							<input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+							<button class="btn btn-warning" type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bottom-footer row m-0">
+			<div class="col-lg-6">
+				<div class="mb-4">
+					<h4 class="text-secondaryColor">Get in touch with us</h4>
+					<p class="text-secondaryColor">Sofitel Philippine Plaza Manila CCP Complex, Roxas Boulevard Pasay
+						City 1300 Metro Manila,
+						Philippines </p>
+					<a href="tel:+63 (02) 8-573-5599" class="text-secondaryColor">Tel: +63 (02) 8-573-5599</a>
+				</div>
+
+				<form class="needs-validation mb-4" data-bs-theme="dark" novalidate>
+					<div class="row g-3 mb-3">
+						<div class="col-12 col-md-6">
+							<label for="fname" class="form-label">First Name</label>
+							<input type="text" class="form-control bg-transparent rounded-0 border border-{}" id="fname"
+								required>
+						</div>
+						<div class="col-12 col-md-6">
+							<label for="lname" class="form-label">Last Name</label>
+							<input type="text" class="form-control bg-transparent rounded-0" id="lname" required>
+						</div>
+					</div>
+					<div class="row g-3 mb-3">
+						<div class="col-12 col-md-6">
+							<label for="email" class="form-label">Email Address</label>
+							<input type="email" class="form-control bg-transparent rounded-0" id="email" required>
+						</div>
+						<div class="col-12 col-md-6">
+							<label for="contact" class="form-label">Contact Number</label>
+							<input type="tel" class="form-control bg-transparent rounded-0" id="contact" required pattern="[0-9]+" title="Please enter a valid numeric contact number">
+						</div>
+					</div>
+					<div class="row g-5 mb-3">
+						<div class="col-12 col-sm-6 col-xl-4 mt-sm-5">
+							<div class="form-group">
+								<label for="datepicker">Preferred Date</label>
+								<div class="input-group">
+									<input type="text" class="form-control bg-transparent rounded-0 border-end-0" id="datepicker" placeholder="Select date">
+									<div class="input-group-append">
+										<span class="input-group-text bg-transparent rounded-0 text-white border-left-0">
+											<i class="fas fa-calendar" id="calendar-icon"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container mt-sm-5 col-12 col-sm-6 col-xl-4">
+							<div class="form-group">
+								<label for="timepicker">Preferred Time</label>
+								<div class="input-group">
+									<input type="text" class="form-control bg-transparent rounded-0 border-end-0" id="timepicker" placeholder="Select date">
+									<div class="input-group-append">
+										<span class="input-group-text bg-transparent rounded-0 text-white border-left-0">
+											<i class="fas fa-clock" id="clock-icon"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 d-none d-lg-block"></div>
+					</div>
+					<hr class="border-top-1 border-white">
+
+					<fieldset class="row">
+						<div class="membership col-sm-5">
+							<p>Please check if you have the following membership cards:</p>
+							<div class="form-check form-check">
+								<input class="form-check-input bg-transparent rounded-0" type="checkbox" id="accor-live"
+									value="option1" data-validation="false">
+								<label class="form-check-label" for="accor-live">ALL Accor Live Limitless card</label>
+							</div>
+							<div class="form-check form-check">
+								<input class="form-check-input bg-transparent rounded-0" type="checkbox" id="accor-plus"
+									value="option2" data-validation="false">
+								<label class="form-check-label" for="accor-plus">Accor Plus Rewards Card</label>
+							</div>
+						</div>
+						<div class="guest col-sm-6">
+							<p>Number of guest/s:</p>
+							<div class="form-number">
+								<label for="quantity">Adults</label>
+								<input type="number" id="quantity" name="quantity" min="1" max="50">
+							</div>
+							<div class="form-number">
+								<label for="quantity">Childs</label>
+								<input type="number" id="quantity" name="quantity" min="1" max="50">
+							</div>
+						</div>
+					</fieldset>
+					<hr class="border-top-1 border-white">
+
+					<div>
+						<p>Are you an in house guest on the date of dining</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input bg-transparent rounded-0" type="checkbox" id="yes-text"
+								value="option1">
+							<label class="form-check-label" for="yes-text">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input bg-transparent rounded-0" type="checkbox" id="no-text"
+								value="option2">
+							<label class="form-check-label" for="no-text">No</label>
+						</div>
+					</div>
+
+					<div>
+						<button class="btn s-btn-primary mt-3" type="submit">Book Now</button>
+					</div>
+				</form>
+
+				<ul class="d-flex inline-nav">
+					<li class="text-san-serif">Terms of Use</li>
+					<li class="text-san-serif">Privacy Policy</li>
+				</ul>
+			</div>
+		</section>
+	</footer>
+	<!-- End Footer -->
+</body>
+
+</html>
