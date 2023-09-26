@@ -3,10 +3,16 @@
   font-size: 23px;
 }
 
+a.nav-link, .fa-brands, .fab {
+  color: white !important;
+}
+
+
 /* HOME PAGE */
 .hero-sidebar {
   position: relative;
-  background: url("../img/hero-chef-bg.jpg") 70% / cover no-repeat, rgba(255, 255, 255, 0.808);
+  background: url("../img/hero-chef-bg.jpg") 70% / cover no-repeat,
+    rgba(255, 255, 255, 0.808);
 }
 
 .hero-sidebar::before {
@@ -54,11 +60,11 @@ img.card-img {
 }
 
 .event-light {
-    background: url("../img/event-light-bg.jpg") 60% / cover no-repeat;
+  background: url("../img/event-light-bg.jpg") 60% / cover no-repeat;
 }
 
 .event-dark {
-    background: url("../img/event-dark-bg.jpg") 60% / cover no-repeat;
+  background: url("../img/event-dark-bg.jpg") 60% / cover no-repeat;
 }
 
 .card-img-overlay {
@@ -77,28 +83,38 @@ img.card-img {
 
 .inline-nav li {
   display: inline-block;
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 .inline-nav li:not(:last-child)::after {
-  content: '|';
-  margin-left: 7px; 
+  content: "|";
+  margin-left: 7px;
   color: white;
 }
 
-form * p, h4, label {
+form * p,
+h4,
+label {
   font-family: var(--text-san-serif);
 }
 
-.form-control, hr {
+.form-control,
+hr {
   color: white !important;
 }
 
+input.guests {
+  max-width: 80px;
+}
+
+.was-validated .form-control:valid, .was-validated .form-control:invalid {
+  background-image: none !important; /* Remove the background image (icon) */
+  padding-right: 1rem !important;   /* Add some spacing on the right to compensate for the missing icon */
+}
+
+/* ---------------------------BS breakpoints---------------------------- */
 /* sm */
 @media (max-width: 575.98px) {
-  /* a.nav-link.text-san-serif {
-    color: black !important;
-} */
 }
 
 /* md */
@@ -111,18 +127,19 @@ form * p, h4, label {
 
 /* xl */
 @media (max-width: 1199.98px) {
-/* HEADER */
+  /* HEADER */
   .contact-details {
     display: none;
   }
 
-  a.nav-link {
+  a.nav-link, .fa-brands, .fab {
     color: black !important;
-}
+  }
 
-/* HOME PAGE */
+  /* HOME PAGE */
   .hero,
-  .hero-sidebar, .carousel {
+  .hero-sidebar,
+  .carousel {
     height: 600px;
   }
 
@@ -144,14 +161,14 @@ form * p, h4, label {
   }
 
   .hero-chef {
-    overflow: hidden; 
+    overflow: hidden;
     position: absolute;
     bottom: 0;
     right: 0;
   }
 
   .hero-chef img {
-    transform: scale(1.5); 
+    transform: scale(1.5);
     transform-origin: top center;
     height: 550px;
   }
@@ -159,5 +176,4 @@ form * p, h4, label {
 
 /* xxl */
 @media (max-width: 1399.98px) {
- 
 }
