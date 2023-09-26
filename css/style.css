@@ -108,8 +108,12 @@ input.guests {
 }
 
 .was-validated .form-control:valid, .was-validated .form-control:invalid {
-  background-image: none !important; /* Remove the background image (icon) */
-  padding-right: 1rem !important;   /* Add some spacing on the right to compensate for the missing icon */
+  background-image: none !important; 
+  padding-right: 1rem !important;  
+}
+
+.bootstrap-timepicker-widget table td input {
+  width: 35px !important;
 }
 
 /* ---------------------------BS breakpoints---------------------------- */
@@ -135,6 +139,10 @@ input.guests {
   a.nav-link, .fa-brands, .fab {
     color: black !important;
   }
+
+  path {
+    fill: black;
+}
 
   /* HOME PAGE */
   .hero,
