@@ -2,11 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap');
 
 /* CSS Reset */
-* {
+body, * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Domine', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Domine', serif;
+}
+
+:root {
+    --text-color: white;
+    --text-san-serif: 'Inter', sans-serif;
+    --text-serif: 'Domine', serif;
+    --primaryColor: #FFE766;
+    --secondaryColor: #FFDFB2;
+    --tertiaryColor: #8B6C3F;
+    --quarternaryColor: #b99052;
+    --blackColor: #2F2A2A;
+    --grayColor: rgb(240, 240, 240);
+    --blue: #2F2A2A !important;
 }
 
 textarea:focus, 
@@ -26,13 +43,8 @@ input[type=checkbox]:focus,
   border-color: var(--tertiaryColor);
 }
 
-:root {
-    --text-color: white;
-    --text-san-serif: 'Inter', sans-serif;
-    --primaryColor: #FFE766;
-    --secondaryColor: #FFDFB2;
-    --tertiaryColor: #8B6C3F;
-    --blackColor: #2F2A2A;;
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--grayColor) !important;
 }
 
 section {
@@ -42,10 +54,21 @@ section {
 * a {
     cursor: pointer;
     text-decoration: none;
+    color: var(--blackColor);
 }
 
-.text-san-serif {
-    font-family: 'Inter', sans-serif;
+
+* a:hover {
+    text-decoration: none !important;
+    color: var(--quarternaryColor) !important;
+}
+
+.text-sans-serif {
+    font-family: var(--text-san-serif);
+}
+
+.text-serif {
+    font-family: var(--text-serif);
 }
 
 .text-primaryColor {
@@ -81,3 +104,4 @@ section {
 .s-btn-primary:focus {
     box-shadow: none !important;
 }
+

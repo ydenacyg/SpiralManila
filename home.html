@@ -3,23 +3,21 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- jQuery -->
+	<title>Home</title>
+
+	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<!-- bootstrap -->
+
+	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-	<!-- font-awesome icons -->
+	<!-- Font-awesome icons -->
 	<script src="https://kit.fontawesome.com/2f82e7e36d.js" crossorigin="anonymous"></script>
-	<!-- google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
-		rel="stylesheet" />
 
-	<!-- custom script and css -->
+	<!-- Custom script and css -->
 	<script type="text/javascript" src="../js/script.js" defer></script>
 	<script type="text/javascript" src="../js/jquery.min.js" defer></script>
 	<link href="css/global.css" rel="stylesheet" />
@@ -49,7 +47,7 @@
 	<!-- Header -->
 	<nav class="navbar navbar-light navbar-expand-xl bg-transparent fixed-top text-white p-0" data-bs-theme="light">
 		<div class="container-fluid p-0 m-0">
-			<a href="#">
+			<a href="/home.html">
 				<img src="img/sofitel-logo.png" alt="Logo">
 			</a>
 			<div class="row header-info justify-content-end p-4">
@@ -57,82 +55,113 @@
 				<div class="col-6 contact-details justify-content-end mr-5">
 					<div class="d-flex justify-content-end gap-4">
 						<div class="d-flex justify-content-end">
-							<p class="text-san-serif text-primaryColor">Tel: +63 (02) 8-573-5599</p>
+							<a class="text-sans-serif text-primaryColor text-uppercase" href="tel:+63 (02) 8-573-5599">Tel: +63 (02) 8-573-5599</a>
 						</div>
 						<div class="d-flex justify-content-end">
-							<p class="text-san-serif text-primaryColor">H6308-FB12@sofitel.com</p>
+							<a class="text-sans-serif text-primaryColor text-uppercase" href="mailto:H6308-FB12@sofitel.com">H6308-FB12@sofitel.com</a>
 						</div>
 					</div>
 				</div>
 				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
 					aria-labelledby="offcanvasNavbarLabel" id="dropdownMenuButtonLight">
 					<div class="offcanvas-header">
-						<h5 class="offcanvas-title text-san-serif" id="offcanvasNavbarLabel">Spiral</h5>
+						<h4 class="offcanvas-title text-sans-serif" id="offcanvasNavbarLabel">Spiral</h4>
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body align-items-center">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 							<li class="nav-item">
-								<a class="nav-link active text-san-serif" aria-current="page" href="#">Home</a>
+								<a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
+									href="/home.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-san-serif" aria-current="page" href="#">The Chefs</a>
+								<a class="nav-link text-sans-serif text-uppercase" aria-current="page" href="/the-chefs.html">The
+									Chefs</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-san-serif" href="#" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">The 21 dining ateliers</a>
+								<a class="nav-link dropdown-toggle text-sans-serif text-uppercase" href="/dining-ateliers.html"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">The 21 dining
+									ateliers</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item text-san-serif text-black" href="#">L’Ecailler</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Filipino</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Peking Duck Oven</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase text-uppercase"
+											href="#">L’Ecailler</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Filipino</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Peking Duck Oven</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Salad and
-											Appetizer</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Sushi Sashimi</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Salad and Appetizer</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Sushi Sashimi</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">L’Epicerie</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Hot Japanese</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">L’Epicerie</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Hot
+											Japanese</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">French Stove</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">French Stove</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Rotisserie</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Wood Fired Oven</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Rotisserie</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Wood
+											Fired Oven</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Churrasco</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">North Indian</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Churrasco</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">North
+											Indian</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Asian Noodles</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Asian
+											Noodles</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Chinese Wok</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Steam Baskets</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Chinese Wok</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Steam
+											Baskets</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Thai</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Korean</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">La Boulangerie</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Thai</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Korean</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">La
+											Boulangerie</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">La Patisserie</a>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">La
+											Patisserie</a>
 									</li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Chocolate</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Creamery</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Chocolate</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="#">Creamery</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-san-serif" href="#" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">
+								<a class="nav-link dropdown-toggle text-sans-serif text-uppercase" href="#"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">
 									Promos & Highlights
 								</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Promos</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Heighlights</a></li>
-									<li><a class="dropdown-item text-san-serif text-black" href="#">Events</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="../promos-and-highlights/promos.html">Promos</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="../promos-and-highlights/hightlights.html">Highlights</a></li>
+									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+											href="../promos-and-highlights/events.html">Events</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active text-san-serif" aria-current="page" href="#">Private
+								<a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
+									href="/private-dining.html">Private
 									Dining</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active text-san-serif" aria-current="page" href="#">Dining
+								<a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
+									href="/dining-guidelines.html">Dining
 									Guidelines</a>
 							</li>
 						</ul>
@@ -151,7 +180,7 @@
 							</a>
 							<a href="#">
 								<path
-									d="M9.03566 0C4.06578 0 -0.000488281 4.05723 -0.000488281 9.05422C-0.000488281 13.5723 3.30674 17.3223 7.62602 18V11.6747H5.33084V9.05422H7.62602V7.05723C7.62602 4.78916 8.9724 3.54217 11.0417 3.54217C12.0266 3.54217 13.0567 3.71386 13.0567 3.71386V5.94578H11.9182C10.7977 5.94578 10.4453 6.64157 10.4453 7.35542V9.05422H12.9573L12.5507 11.6747H10.4453V18C12.5746 17.6637 14.5136 16.5773 15.9121 14.9368C17.3106 13.2963 18.0766 11.2099 18.0718 9.05422C18.0718 4.05723 14.0055 0 9.03566 0Z"
+									d="M9.03566 0C4.06578 0 -0.000488281 4.05723 -0.000488281 9.05422C-0.000488281 13.5723 3.30674 17.3223 7.62602 18V11.6747h4.33084V9.05422H7.62602V7.05723C7.62602 4.78916 8.9724 3.54217 11.0417 3.54217C12.0266 3.54217 13.0567 3.71386 13.0567 3.71386V5.94578H11.9182C10.7977 5.94578 10.4453 6.64157 10.4453 7.35542V9.05422H12.9573L12.5507 11.6747H10.4453V18C12.5746 17.6637 14.5136 16.5773 15.9121 14.9368C17.3106 13.2963 18.0766 11.2099 18.0718 9.05422C18.0718 4.05723 14.0055 0 9.03566 0Z"
 									fill="white" />
 							</a>
 						</svg>
@@ -166,88 +195,106 @@
 	</nav>
 	<!-- End Header -->
 
+
 	<!-- Page Content -->
 	<article class="page-content">
-		<section class="row d-flex p-0 position-relative">
-			<div class="hero col-xl-9 p-0 order-xl-2">
-				<div id="hero-carousel" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-					<div class="row hero-content text-white py-5">
-						<div class="col-6 d-none d-lg-block"></div>
-						<div class="hero-text col-12 col-lg-5 text-left text-lg-right text-lg-end p-5 p-lg-0">
-							<h1 class="text-shadow">Indulge in Culinary Artistry</h1>
-							<p class="text-shadow">Step into our world of culinary excellence, where every dish is a
-								masterpiece crafted
-								with the finest ingredients and utmost care at our opulent restaurant.</p>
-						</div>
-
-						<!-- Hero Featured Products on Desktop -->
-						<div class="hero-featured-promo gap-4 d-lg-flex d-none z-3 py-3">
-							<div class="card w-full text-bg-dark rounded-0 border-0">
-								<img src="../img/hero-ftured-promo1.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
-									<h5 class="card-title text-shadow">Dive! at SPIRAL</h5>
-									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
-											More</small></a>
+		<div class="container-fluid d-flex position-relative">
+			<div class="row p-0">
+				<div class="hero col-xl-9 p-0 order-xl-2">
+					<div id="hero-carousel" class="carousel hero-slide d-flex align-items-end" data-bs-ride="carousel">
+						<div class="hero-content text-white py-5">
+							<div class="container">
+								<div class="row">
+									<div class="col-6 d-none d-lg-block"></div>
+									<div
+										class="hero-text col-12 col-lg-6 text-left text-lg-right text-lg-end p-5 p-lg-0">
+										<h1 class="text-shadow">Indulge in <br> Culinary Artistry</h1>
+										<p class="text-shadow">Step into our world of culinary excellence, where every
+											dish is a
+											masterpiece crafted
+											with the finest ingredients and utmost care at our opulent restaurant.</p>
+									</div>
 								</div>
 							</div>
 
-							<div class="card w-full text-bg-dark rounded-0 border-0">
-								<img src="../img/hero-ftured-promo2.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
-									<h5 class="card-title" text-shadow>Spiral Weekend Treat</h5>
-									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
-											More</small></a>
+							<!-- Hero Featured Products on Desktop -->
+							<div class="hero-featured-promo gap-4 d-lg-flex d-none z-3 py-3">
+								<div class="card w-full text-bg-dark rounded-0 border-0">
+									<img src="../img/hero-ftured-promo1.jpg" class="card-img" alt="...">
+									<div
+										class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+										<h5 class="card-title text-shadow">Dive! at SPIRAL</h5>
+										<a class="card-text"><small class="text-sans-serif text-primaryColor">Learn
+												More</small></a>
+									</div>
 								</div>
-							</div>
 
-							<div class="card w-full text-bg-dark rounded-0 border-0">
-								<img src="../img/hero-ftured-promo3.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
-									<h5 class="card-title text-shadow">Promo Name</h5>
-									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
-											More</small></a>
+								<div class="card w-full text-bg-dark rounded-0 border-0">
+									<img src="../img/hero-ftured-promo2.jpg" class="card-img" alt="...">
+									<div
+										class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+										<h5 class="card-title" text-shadow>Spiral Weekend Treat</h5>
+										<a class="card-text"><small class="text-sans-serif text-primaryColor">Learn
+												More</small></a>
+									</div>
 								</div>
-							</div>
 
-							<div class="card w-full text-bg-dark rounded-0 border-0">
-								<img src="../img/hero-ftured-promo4.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
-									<h5 class="card-title text-shadow">Promo Name</h5>
-									<a class="card-text"><small class="text-san-serif text-primaryColor">Learn
-											More</small></a>
+								<div class="card w-full text-bg-dark rounded-0 border-0">
+									<img src="../img/hero-ftured-promo3.jpg" class="card-img" alt="...">
+									<div
+										class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+										<h5 class="card-title text-shadow">Promo Name</h5>
+										<a class="card-text"><small class="text-sans-serif text-primaryColor">Learn
+												More</small></a>
+									</div>
+								</div>
+
+								<div class="card w-full text-bg-dark rounded-0 border-0">
+									<img src="../img/hero-ftured-promo4.jpg" class="card-img" alt="...">
+									<div
+										class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
+										<h5 class="card-title text-shadow">Promo Name</h5>
+										<a class="card-text"><small class="text-sans-serif text-primaryColor">Learn
+												More</small></a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="carousel-inner z-0">
-						<div class="carousel-item active">
-							<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
-						</div>
-						<div class="carousel-item">
-							<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
-						</div>
-						<div class="carousel-item">
-							<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-inner z-0">
+							<div class="carousel-item active">
+								<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="../img/hero-image.jpg" class="d-block w-100" alt="...">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<aside class="hero-sidebar col-xl-3 d-flex flex-wrap align-content-xl-end order-xl-1 p-5">
-				<div class="row">
-					<div class="col-7 col-xl-9 z-2 p-0">
-						<p>“ Welcome to our restaurant, where our team of culinary experts is committed to delivering a
-							dining experience unlike any other. Our menu is carefully curated to showcase a variety of
-							culinary traditions, while also incorporating modern techniques and creative twists. ”</p>
-						<h6 class="text-tertiaryColor">Chef Bettina Argulles</h6>
-						<p class="m-0">Executive Chef</p>
+
+				<aside class="hero-sidebar col-xl-3 d-flex flex-wrap align-content-xl-end order-xl-1 p-5">
+					<div class="row">
+						<div class="col-7 col-md-7 col-xl-8 z-2 p-0">
+							<p>“ Welcome to our restaurant, where our team of culinary experts is committed to
+								delivering a
+								dining experience unlike any other. Our menu is carefully curated to showcase a variety
+								of
+								culinary traditions, while also incorporating modern techniques and creative twists. ”
+							</p>
+							<h6 class="text-tertiaryColor">Chef Bettina Argulles</h6>
+							<p class="m-0">Executive Chef</p>
+						</div>
 					</div>
+				</aside>
+
+				<div class="hero-chef col-xl-4 position-absolute bottom-0 d-flex justify-content-end z-3">
+					<img class="" src="../img/hero-chef.png" class="d-block mx-auto" alt="...">
 				</div>
-			</aside>
-			<div class="hero-chef col-xl-4 position-absolute bottom-0 d-flex justify-content-end z-3">
-				<img class="" src="../img/hero-chef.png" class="d-block mx-auto" alt="...">
 			</div>
-		</section>
+		</div>
 
 		<!-- Hero Featured Products on Mobile -->
 		<div class="hero-featured-promo d-flex flex-column gap-5 p-5 d-lg-none">
@@ -255,7 +302,7 @@
 				<img src="../img/hero-ftured-promo1.jpg" class="card-img" alt="...">
 				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
 					<h5 class="card-title">Dive! at SPIRAL</h5>
-					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+					<p class="card-text"><small class="text-sans-serif text-primaryColor">Learn More</small></p>
 				</div>
 			</div>
 
@@ -263,7 +310,7 @@
 				<img src="../img/hero-ftured-promo2.jpg" class="card-img" alt="...">
 				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
 					<h5 class="card-title">Spiral Weekend Treat</h5>
-					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+					<p class="card-text"><small class="text-sans-serif text-primaryColor">Learn More</small></p>
 				</div>
 			</div>
 
@@ -271,7 +318,7 @@
 				<img src="../img/hero-ftured-promo3.jpg" class="card-img" alt="...">
 				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
 					<h5 class="card-title">Promo Name</h5>
-					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+					<p class="card-text"><small class="text-sans-serif text-primaryColor">Learn More</small></p>
 				</div>
 			</div>
 
@@ -279,47 +326,49 @@
 				<img src="../img/hero-ftured-promo4.jpg" class="card-img" alt="...">
 				<div class="card-img-overlay d-flex align-items-end justify-content-end flex-column">
 					<h5 class="card-title">Promo Name</h5>
-					<p class="card-text"><small class="text-san-serif text-primaryColor">Learn More</small></p>
+					<p class="card-text"><small class="text-sans-serif text-primaryColor">Learn More</small></p>
 				</div>
 			</div>
 		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="event-light col-md-6 p-5">
+					<div class="p-4 d-flex">
+						<div
+							class="col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-lg-end flex-column">
+							<h3 class="text-tertiaryColor">July</h3>
+							<h2 class="fs-1 text-tertiaryColor">31</h2>
+						</div>
+						<div class="col-8 col-md-9 col-lg-8 d-flex flex-column flex-lg-column-reverse">
+							<h2 class="order-1 text-tertiaryColor">Sample Event Name</h2>
+							<p class="order-2">Sed ut tempus aliquam odio. Blandit quis nisl aliquam bibendum tincidunt
+								tortor feugiat
+								volutpat. Tincidunt cursus aliquet aenean fusce. Feugiat enim vestibulum pretium
+								malesuada
+								convallis ornare iaculis pharetra.</p>
+						</div>
+					</div>
+				</div>
+				<div class="event-dark col-md-6 p-5 text-white">
+					<div class="p-4 d-flex">
+						<div
+							class="col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-lg-end flex-column">
+							<h3 class="text-secondaryColor">July</h3>
+							<h2 class="fs-1 text-secondaryColor">31</h2>
+						</div>
+						<div class="col-8 col-md-9 col-lg-8 d-flex flex-column flex-lg-column-reverse">
+							<h2 class="order-1 text-secondaryColor">Sample Event Name</h2>
+							<p class="order-2">Sed ut tempus aliquam odio. Blandit quis nisl aliquam bibendum tincidunt
+								tortor feugiat
+								volutpat. Tincidunt cursus aliquet aenean fusce. Feugiat enim vestibulum pretium
+								malesuada
+								convallis ornare iaculis pharetra.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<section class="events row p-0">
-			<div class="event-light col-md-6 text-black p-5">
-				<div class="row">
-					<div
-						class="col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-lg-end flex-column">
-						<h3 class="text-tertiaryColor">July</h3>
-						<h2 class="fs-1 text-tertiaryColor">31</h2>
-					</div>
-					<div class="col-8 col-md-9 col-lg-8 d-flex flex-column flex-lg-column-reverse">
-						<h2 class="order-1 text-tertiaryColor">Sample Event Name</h2>
-						<p class="order-2">Sed ut tempus aliquam odio. Blandit quis nisl aliquam bibendum tincidunt
-							tortor feugiat
-							volutpat. Tincidunt cursus aliquet aenean fusce. Feugiat enim vestibulum pretium malesuada
-							convallis ornare iaculis pharetra.</p>
-					</div>
-				</div>
-			</div>
-			<div class="event-dark col-md-6 bg-black text-white  p-5">
-				<div class="row">
-					<div
-						class="col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-lg-end flex-column">
-						<h3 class="text-secondaryColor">July</h3>
-						<h2 class="fs-1 text-secondaryColor">31</h2>
-					</div>
-					<div class="col-8 col-md-9 col-lg-8 d-flex flex-column flex-lg-column-reverse">
-						<h2 class="order-1 text-secondaryColor">Sample Event Name</h2>
-						<p class="order-2">Sed ut tempus aliquam odio. Blandit quis nisl aliquam bibendum tincidunt
-							tortor feugiat
-							volutpat. Tincidunt cursus aliquet aenean fusce. Feugiat enim vestibulum pretium malesuada
-							convallis ornare iaculis pharetra.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 	</article>
 	<!-- End Page Content -->
 
@@ -328,7 +377,7 @@
 		<section class="top-footer bg-body-secondary">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-lg-7">
+					<div class="col-12 col-lg-7 p-0">
 						<h3>Stay in touch</h3>
 						<p>Subscribe to our newsletter to receive the latest news and exclusive offers every week.</p>
 					</div>
@@ -345,7 +394,7 @@
 		<section class="bottom-footer row m-0">
 			<div class="col-lg-6">
 				<div class="mb-4">
-					<h4 class="text-secondaryColor">Get in touch with us</h4>
+					<h4 class="text-secondaryColor text-serif">Get in touch with us</h4>
 					<p class="text-secondaryColor">Sofitel Philippine Plaza Manila CCP Complex, Roxas Boulevard Pasay
 						City 1300 Metro Manila,
 						Philippines </p>
@@ -490,8 +539,10 @@
 				</form>
 
 				<ul class="d-flex inline-nav">
-					<li class="text-san-serif">Terms of Use</li>
-					<li class="text-san-serif">Privacy Policy</li>
+					<li class="text-sans-serif"><a href="/terms-and-condition.html" class="text-white">Terms of Use</a>
+					</li>
+					<li class="text-sans-serif"><a href="/privacy-policy.html" class="text-white">Privacy Policy</a>
+					</li>
 				</ul>
 			</div>
 		</section>
