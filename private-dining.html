@@ -45,155 +45,327 @@
 
 <body>
     <!-- Header -->
-	<nav class="navbar navbar-light navbar-expand-xl bg-transparent fixed-top text-white p-0" data-bs-theme="light">
-		<div class="container-fluid p-0 m-0">
-			<a href="#">
-				<img src="img/sofitel-logo.png" alt="Logo">
-			</a>
-			<div class="row header-info justify-content-end p-4">
-				<div class="col-6"></div>
-				<div class="col-6 contact-details justify-content-end mr-5">
-					<div class="d-flex justify-content-end gap-4">
-						<div class="d-flex justify-content-end">
-							<p class="text-sans-serif text-primaryColor text-uppercase">Tel: +63 (02) 8-573-5599</p>
-						</div>
-						<div class="d-flex justify-content-end">
-							<p class="text-sans-serif text-primaryColor text-uppercase">H6308-FB12@sofitel.com</p>
-						</div>
-					</div>
-				</div>
-				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel" id="dropdownMenuButtonLight">
-					<div class="offcanvas-header">
-						<h4 class="offcanvas-title text-sans-serif" id="offcanvasNavbarLabel">Spiral</h4>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<div class="offcanvas-body align-items-center">
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item">
-								<a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
-									href="/home.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-sans-serif text-uppercase" aria-current="page" href="#">The
-									Chefs</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-sans-serif text-uppercase" href="#" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">The 21 dining ateliers</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase text-uppercase"
-											href="#">L’Ecailler</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Filipino</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Peking Duck Oven</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Salad
-											and
-											Appetizer</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Sushi
-											Sashimi</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">L’Epicerie</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Hot
-											Japanese</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">French Stove</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Rotisserie</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Wood
-											Fired Oven</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Churrasco</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">North
-											Indian</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Asian
-											Noodles</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Chinese Wok</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Steam
-											Baskets</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Thai</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Korean</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">La
-											Boulangerie</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">La
-											Patisserie</a>
-									</li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Chocolate</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="#">Creamery</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-sans-serif text-uppercase" href="#" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">
-									Promos & Highlights
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="/promos.html">Promos</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="/hightlights.html">Highlights</a></li>
-									<li><a class="dropdown-item text-sans-serif text-black text-uppercase"
-											href="/events.html">Events</a></li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
-									href="/private-dining.html">Private
-									Dining</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
-									href="/dining-guidelines.html">Dining
-									Guidelines</a>
-							</li>
-						</ul>
+    <nav class="navbar navbar-light navbar-expand-xl bg-transparent fixed-top text-white p-0" data-bs-theme="light">
+        <div class="container-fluid p-0 m-0">
+            <a href="/home.html">
+                <img src="../img/sofitel-logo.png" alt="Logo">
+            </a>
+            <div class="row header-info justify-content-end p-4">
+                <div class="col-6"></div>
+                <div class="col-6 contact-details justify-content-end mr-5">
+                    <div class="d-flex justify-content-end gap-4">
+                        <div class="d-flex justify-content-end">
+                            <a class="text-sans-serif text-primaryColor text-uppercase"
+                                href="tel:+63 (02) 8-573-5599">Tel: +63 (02) 8-573-5599</a>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a class="text-sans-serif text-primaryColor text-uppercase"
+                                href="mailto:H6308-FB12@sofitel.com">H6308-FB12@sofitel.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" id="dropdownMenuButtonLight">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title text-sans-serif" id="offcanvasNavbarLabel">Spiral</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body align-items-center">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
+                                    href="/home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-sans-serif text-uppercase" aria-current="page"
+                                    href="/the-chefs.html">The
+                                    Chefs</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-sans-serif text-uppercase"
+                                    href="/dining-ateliers.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">The 21 dining
+                                    ateliers</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase text-uppercase"
+                                            href="#">L’Ecailler</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Filipino</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Peking Duck Oven</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Salad and Appetizer</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Sushi Sashimi</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">L’Epicerie</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Hot
+                                            Japanese</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">French Stove</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Rotisserie</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">Wood
+                                            Fired Oven</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Churrasco</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">North
+                                            Indian</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Asian
+                                            Noodles</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Chinese Wok</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Steam
+                                            Baskets</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Thai</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Korean</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">La
+                                            Boulangerie</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase" href="#">La
+                                            Patisserie</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Chocolate</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="#">Creamery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-sans-serif text-uppercase" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Promos & Highlights
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="../promos-and-highlights/promos.html">Promos</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="../promos-and-highlights/hightlights.html">Highlights</a></li>
+                                    <li><a class="dropdown-item text-sans-serif text-black text-uppercase"
+                                            href="../promos-and-highlights/events.html">Events</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
+                                    href="/private-dining.html">Private
+                                    Dining</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-sans-serif text-uppercase" aria-current="page"
+                                    href="/dining-guidelines.html">Dining
+                                    Guidelines</a>
+                            </li>
+                        </ul>
 
-						<svg class="d-flex gap-3 mt-4 mt-xl-0" xmlns="http://www.w3.org/2000/svg" width="120"
-							height="30" viewBox="0 0 70 24" fill="none">
-							<a href="#">
-								<path
-									d="M85.0001 2.11765C84.1848 2.48824 83.306 2.73176 82.3954 2.84824C83.3271 2.28706 84.0471 1.39765 84.386 0.328235C83.5071 0.857647 82.533 1.22824 81.506 1.44C80.6695 0.529412 79.4942 0 78.1601 0C75.6718 0 73.6389 2.03294 73.6389 4.54235C73.6389 4.90235 73.6813 5.25177 73.7554 5.58C69.986 5.38941 66.6295 3.57882 64.3954 0.836471C64.0036 1.50353 63.7813 2.28706 63.7813 3.11294C63.7813 4.69059 64.5754 6.08824 65.8036 6.88235C65.0518 6.88235 64.353 6.67059 63.7389 6.35294V6.38471C63.7389 8.58706 65.306 10.4294 67.3813 10.8424C66.715 11.0247 66.0155 11.0501 65.3377 10.9165C65.6253 11.8191 66.1885 12.6089 66.9482 13.1749C67.7079 13.7408 68.6258 14.0545 69.573 14.0718C67.9674 15.3428 65.9772 16.0299 63.9295 16.02C63.5695 16.02 63.2095 15.9988 62.8495 15.9565C64.8613 17.2482 67.2542 18 69.8165 18C78.1601 18 82.7448 11.0753 82.7448 5.07176C82.7448 4.87059 82.7448 4.68 82.7342 4.47882C83.6236 3.84353 84.386 3.03882 85.0001 2.11765Z"
-									fill="white" />
-							</a>
-							<a href="#">
-								<path
-									d="M40.9995 0C43.4448 0 43.7499 0.00899995 44.7093 0.0539999C45.6678 0.0989999 46.3203 0.2493 46.8945 0.4725C47.4885 0.7011 47.9889 1.0107 48.4893 1.5102C48.947 1.96011 49.3011 2.50433 49.527 3.105C49.7493 3.6783 49.9005 4.3317 49.9455 5.2902C49.9878 6.2496 49.9995 6.5547 49.9995 9C49.9995 11.4453 49.9905 11.7504 49.9455 12.7098C49.9005 13.6683 49.7493 14.3208 49.527 14.895C49.3017 15.496 48.9475 16.0404 48.4893 16.4898C48.0393 16.9473 47.4951 17.3014 46.8945 17.5275C46.3212 17.7498 45.6678 17.901 44.7093 17.946C43.7499 17.9883 43.4448 18 40.9995 18C38.5542 18 38.2491 17.991 37.2897 17.946C36.3312 17.901 35.6787 17.7498 35.1045 17.5275C34.5036 17.302 33.9593 16.9478 33.5097 16.4898C33.052 16.04 32.6978 15.4957 32.472 14.895C32.2488 14.3217 32.0985 13.6683 32.0535 12.7098C32.0112 11.7504 31.9995 11.4453 31.9995 9C31.9995 6.5547 32.0085 6.2496 32.0535 5.2902C32.0985 4.3308 32.2488 3.6792 32.472 3.105C32.6972 2.50396 33.0514 1.95959 33.5097 1.5102C33.9594 1.05231 34.5037 0.698156 35.1045 0.4725C35.6787 0.2493 36.3303 0.0989999 37.2897 0.0539999C38.2491 0.0116999 38.5542 0 40.9995 0ZM40.9995 4.5C39.806 4.5 38.6614 4.97411 37.8175 5.81802C36.9736 6.66193 36.4995 7.80653 36.4995 9C36.4995 10.1935 36.9736 11.3381 37.8175 12.182C38.6614 13.0259 39.806 13.5 40.9995 13.5C42.193 13.5 43.3376 13.0259 44.1815 12.182C45.0254 11.3381 45.4995 10.1935 45.4995 9C45.4995 7.80653 45.0254 6.66193 44.1815 5.81802C43.3376 4.97411 42.193 4.5 40.9995 4.5ZM46.8495 4.275C46.8495 3.97663 46.731 3.69048 46.52 3.4795C46.309 3.26853 46.0229 3.15 45.7245 3.15C45.4261 3.15 45.14 3.26853 44.929 3.4795C44.718 3.69048 44.5995 3.97663 44.5995 4.275C44.5995 4.57337 44.718 4.85952 44.929 5.0705C45.14 5.28147 45.4261 5.4 45.7245 5.4C46.0229 5.4 46.309 5.28147 46.52 5.0705C46.731 4.85952 46.8495 4.57337 46.8495 4.275ZM40.9995 6.3C41.7156 6.3 42.4024 6.58446 42.9087 7.09081C43.415 7.59716 43.6995 8.28392 43.6995 9C43.6995 9.71608 43.415 10.4028 42.9087 10.9092C42.4024 11.4155 41.7156 11.7 40.9995 11.7C40.2834 11.7 39.5967 11.4155 39.0903 10.9092C38.584 10.4028 38.2995 9.71608 38.2995 9C38.2995 8.28392 38.584 7.59716 39.0903 7.09081C39.5967 6.58446 40.2834 6.3 40.9995 6.3Z"
-									fill="white" />
-							</a>
-							<a href="#">
-								<path
-									d="M9.03566 0C4.06578 0 -0.000488281 4.05723 -0.000488281 9.05422C-0.000488281 13.5723 3.30674 17.3223 7.62602 18V11.6747h4.33084V9.05422H7.62602V7.05723C7.62602 4.78916 8.9724 3.54217 11.0417 3.54217C12.0266 3.54217 13.0567 3.71386 13.0567 3.71386V5.94578H11.9182C10.7977 5.94578 10.4453 6.64157 10.4453 7.35542V9.05422H12.9573L12.5507 11.6747H10.4453V18C12.5746 17.6637 14.5136 16.5773 15.9121 14.9368C17.3106 13.2963 18.0766 11.2099 18.0718 9.05422C18.0718 4.05723 14.0055 0 9.03566 0Z"
-									fill="white" />
-							</a>
-						</svg>
-					</div>
-				</div>
-			</div>
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
-	</nav>
-	<!-- End Header -->
+                        <svg class="d-flex gap-3 mt-4 mt-xl-0" xmlns="http://www.w3.org/2000/svg" width="120"
+                            height="30" viewBox="0 0 70 24" fill="none">
+                            <a href="#">
+                                <path
+                                    d="M85.0001 2.11765C84.1848 2.48824 83.306 2.73176 82.3954 2.84824C83.3271 2.28706 84.0471 1.39765 84.386 0.328235C83.5071 0.857647 82.533 1.22824 81.506 1.44C80.6695 0.529412 79.4942 0 78.1601 0C75.6718 0 73.6389 2.03294 73.6389 4.54235C73.6389 4.90235 73.6813 5.25177 73.7554 5.58C69.986 5.38941 66.6295 3.57882 64.3954 0.836471C64.0036 1.50353 63.7813 2.28706 63.7813 3.11294C63.7813 4.69059 64.5754 6.08824 65.8036 6.88235C65.0518 6.88235 64.353 6.67059 63.7389 6.35294V6.38471C63.7389 8.58706 65.306 10.4294 67.3813 10.8424C66.715 11.0247 66.0155 11.0501 65.3377 10.9165C65.6253 11.8191 66.1885 12.6089 66.9482 13.1749C67.7079 13.7408 68.6258 14.0545 69.573 14.0718C67.9674 15.3428 65.9772 16.0299 63.9295 16.02C63.5695 16.02 63.2095 15.9988 62.8495 15.9565C64.8613 17.2482 67.2542 18 69.8165 18C78.1601 18 82.7448 11.0753 82.7448 5.07176C82.7448 4.87059 82.7448 4.68 82.7342 4.47882C83.6236 3.84353 84.386 3.03882 85.0001 2.11765Z"
+                                    fill="white" />
+                            </a>
+                            <a href="#">
+                                <path
+                                    d="M40.9995 0C43.4448 0 43.7499 0.00899995 44.7093 0.0539999C45.6678 0.0989999 46.3203 0.2493 46.8945 0.4725C47.4885 0.7011 47.9889 1.0107 48.4893 1.5102C48.947 1.96011 49.3011 2.50433 49.527 3.105C49.7493 3.6783 49.9005 4.3317 49.9455 5.2902C49.9878 6.2496 49.9995 6.5547 49.9995 9C49.9995 11.4453 49.9905 11.7504 49.9455 12.7098C49.9005 13.6683 49.7493 14.3208 49.527 14.895C49.3017 15.496 48.9475 16.0404 48.4893 16.4898C48.0393 16.9473 47.4951 17.3014 46.8945 17.5275C46.3212 17.7498 45.6678 17.901 44.7093 17.946C43.7499 17.9883 43.4448 18 40.9995 18C38.5542 18 38.2491 17.991 37.2897 17.946C36.3312 17.901 35.6787 17.7498 35.1045 17.5275C34.5036 17.302 33.9593 16.9478 33.5097 16.4898C33.052 16.04 32.6978 15.4957 32.472 14.895C32.2488 14.3217 32.0985 13.6683 32.0535 12.7098C32.0112 11.7504 31.9995 11.4453 31.9995 9C31.9995 6.5547 32.0085 6.2496 32.0535 5.2902C32.0985 4.3308 32.2488 3.6792 32.472 3.105C32.6972 2.50396 33.0514 1.95959 33.5097 1.5102C33.9594 1.05231 34.5037 0.698156 35.1045 0.4725C35.6787 0.2493 36.3303 0.0989999 37.2897 0.0539999C38.2491 0.0116999 38.5542 0 40.9995 0ZM40.9995 4.5C39.806 4.5 38.6614 4.97411 37.8175 5.81802C36.9736 6.66193 36.4995 7.80653 36.4995 9C36.4995 10.1935 36.9736 11.3381 37.8175 12.182C38.6614 13.0259 39.806 13.5 40.9995 13.5C42.193 13.5 43.3376 13.0259 44.1815 12.182C45.0254 11.3381 45.4995 10.1935 45.4995 9C45.4995 7.80653 45.0254 6.66193 44.1815 5.81802C43.3376 4.97411 42.193 4.5 40.9995 4.5ZM46.8495 4.275C46.8495 3.97663 46.731 3.69048 46.52 3.4795C46.309 3.26853 46.0229 3.15 45.7245 3.15C45.4261 3.15 45.14 3.26853 44.929 3.4795C44.718 3.69048 44.5995 3.97663 44.5995 4.275C44.5995 4.57337 44.718 4.85952 44.929 5.0705C45.14 5.28147 45.4261 5.4 45.7245 5.4C46.0229 5.4 46.309 5.28147 46.52 5.0705C46.731 4.85952 46.8495 4.57337 46.8495 4.275ZM40.9995 6.3C41.7156 6.3 42.4024 6.58446 42.9087 7.09081C43.415 7.59716 43.6995 8.28392 43.6995 9C43.6995 9.71608 43.415 10.4028 42.9087 10.9092C42.4024 11.4155 41.7156 11.7 40.9995 11.7C40.2834 11.7 39.5967 11.4155 39.0903 10.9092C38.584 10.4028 38.2995 9.71608 38.2995 9C38.2995 8.28392 38.584 7.59716 39.0903 7.09081C39.5967 6.58446 40.2834 6.3 40.9995 6.3Z"
+                                    fill="white" />
+                            </a>
+                            <a href="#">
+                                <path
+                                    d="M9.03566 0C4.06578 0 -0.000488281 4.05723 -0.000488281 9.05422C-0.000488281 13.5723 3.30674 17.3223 7.62602 18V11.6747h4.33084V9.05422H7.62602V7.05723C7.62602 4.78916 8.9724 3.54217 11.0417 3.54217C12.0266 3.54217 13.0567 3.71386 13.0567 3.71386V5.94578H11.9182C10.7977 5.94578 10.4453 6.64157 10.4453 7.35542V9.05422H12.9573L12.5507 11.6747H10.4453V18C12.5746 17.6637 14.5136 16.5773 15.9121 14.9368C17.3106 13.2963 18.0766 11.2099 18.0718 9.05422C18.0718 4.05723 14.0055 0 9.03566 0Z"
+                                    fill="white" />
+                            </a>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- End Header -->
 
     <!-- Page Content -->
     <article class="page-content">
+        <div class="d-flex flex-column flex-lg-row p-0">
+            <aside class="private-dining-sidebar default-sidebar-size col-12 col-lg-4 d-flex flex-wrap align-content-center text-white">               
+            </aside>
+            <div class="dark-textured-bg text-white col-12 col-lg-8 p-0">
+                <div class="dark-main-container d-flex flex-column align-items-center justify-content-center px-3 pt-5"> <!-- overlay -->
+                    <div class="container-fluid p-0">
+                        <div class="hero-text col-12 col-xl-8 py-5 px-2 p-lg-5">
+                            <form class="needs-validation mb-4 pt-lg-5" data-bs-theme="dark" novalidate>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="fname" class="form-label">First Name</label>
+                                        <input type="text" class="form-control rounded-0" id="fname" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="lname" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control rounded-0" id="lname" required>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control rounded-0" id="email" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="contact" class="form-label">Contact Number</label>
+                                        <input type="tel" class="form-control rounded-0" id="contact" required
+                                            pattern="[0-9]+" title="Please enter a valid numeric contact number">
+                                    </div>
+                                </div>
+                                <div class="row g-5">
+                                    <div class="col-12 col-xl-4 mt-sm-5">
+                                        <label for="purpose" class="form-label">Purpose of Submission</label>
+                                        <input type="Purpose of Submission" class="form-control rounded-0" id="purpose" required>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-4 mt-sm-3 mt-xl-5">
+                                        <div class="form-group">
+                                            <label for="datepicker">Preferred Date</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control rounded-0 border-end-0"
+                                                    id="datepicker" placeholder="Select date" required>
+                                                <div class="input-group-append">
+                                                    <span
+                                                        class="input-group-text rounded-0 text-white border-left-0">
+                                                        <i class="fas fa-calendar" id="calendar-icon"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container mt-sm-3  mt-xl-5 col-12 col-sm-6 col-xl-4">
+                                        <div class="form-group">
+                                            <label for="timepicker">Preferred Time</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control rounded-0 border-end-0"
+                                                    id="timepicker" placeholder="Select time" required>
+                                                <div class="input-group-append">
+                                                    <span
+                                                        class="input-group-text rounded-0 text-white border-left-0">
+                                                        <i class="fas fa-clock" id="clock-icon"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-top-1 border-white">
+            
+                                <fieldset class="row">
+                                    <div class="membership col-12 col-xl-5 mb-4 mb-xl-0 mt-2">
+                                        <p>Please check if you have the following membership cards:</p>
+                                        <div class="form-check form-check">
+                                            <input class="form-check-input rounded-0 bg-transparent border-white" type="checkbox" id="accor-live"
+                                                value="option1" data-validation="false">
+                                            <label class="form-check-label" for="accor-live">ALL Accor Live Limitless card</label>
+                                        </div>
+                                        <div class="form-check form-check">
+                                            <input class="form-check-input rounded-0 bg-transparent border-white" type="checkbox" id="accor-plus"
+                                                value="option2" data-validation="false">
+                                            <label class="form-check-label" for="accor-plus">Accor Plus Rewards Card</label>
+                                        </div>
+                                    </div>
+                                    <div class="guest col-12 col-md-6 col-xl-4">
+                                        <p>Number of guest/s:</p>
+                                        <div class="form-group d-flex align-items-center">
+                                            <label for="adults-count">Adults</label>
+                                            <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary border-0" type="button"
+                                                        id="adults-decrement">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text"
+                                                    class="guests form-control text-center rounded-0 number-spinner"
+                                                    id="adults-count" value="0">
+                                                <span class="input-group-append">
+                                                    <button class="btn btn-outline-secondary border-0" type="button"
+                                                        id="adults-increment">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex align-items-center">
+                                            <label for="childs-count">Childs</label>
+                                            <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary border-0" type="button"
+                                                        id="childs-decrement">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text"
+                                                    class="guests form-control text-center rounded-0 number-spinner"
+                                                    id="childs-count" value="0">
+                                                <span class="input-group-append">
+                                                    <button class="btn btn-outline-secondary border-0" type="button"
+                                                        id="childs-increment">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </fieldset>
+                                <hr class="border-top-1 border-white">
+            
+                                <div>
+                                    <p>Are you an in house guest on the date of dining</p>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input rounded-0 bg-transparent border-white" type="checkbox" id="yes-text"
+                                            value="option1" required>
+                                        <label class="form-check-label" for="yes-text">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input rounded-0 bg-transparent border-white" type="checkbox" id="no-text"
+                                            value="option2" required>
+                                        <label class="form-check-label" for="no-text">No</label>
+                                    </div>
+                                </div>
+            
+                                <div>
+                                    <button class="btn s-btn-primary mt-3" type="submit">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="container-fluid px-2 px-lg-5 pb-5">
+                            <p class="text-shadow">* By voluntarily submitting this form, you acknowledge Sofitel’s collection, usage, processing, sharing, and retention of your personal information for the purpose of completing an inquiry or booking. Should you wish to know more about Sofitel’s Privacy Policy, you may visit www.sofitelmanila.com.
+                                <br><br>
+                                For booking requests, kindly await a confirmation email as proof of reservation.
+                                <br><br>
+                                To avoid inconvenience and booking scams, we highly advise our patrons to book a reservation only through our official website, forms, and/or booking lines: 
+                                <br>
+                                Email address: <a href="mailto:H6308-FB12@sofitel.com" class="text-primaryColor">H6308-FB12@sofitel.com</a>
+                                <br>
+                                Contact number: <a href="tel:+632 8-573-5599" class="text-primaryColor">+632 8-573-5599</a>
+                                <br>
+                                Reservations can also be done through this booking form.</p>
+                        </div>                     
+                    </div>                 
+                </div>
+            </div>
+        </div>
     </article>
     <!-- End Page Content -->
 

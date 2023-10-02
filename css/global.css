@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
     --blackColor: #2F2A2A;
     --grayColor: rgb(240, 240, 240);
     --blue: #2F2A2A !important;
+    --sidebar-gradient: linear-gradient(180deg, #eddec8b4 0%, rgba(237, 222, 200, 0.00) 30.18%);
+    --dark-main-gradient: linear-gradient(3deg, #cbb6986b 19.46%, #ffffff3b 74%, rgba(0, 0, 0, 0.452) 94.72%);
 }
 
 textarea:focus, 
@@ -39,8 +41,8 @@ input[type=checkbox]:focus,
 [type=email].form-control:focus, 
 [type=tel].form-control:focus, 
 [contenteditable].form-control:focus {
-  box-shadow: none;
-  border-color: var(--tertiaryColor);
+    box-shadow: none;
+    border-color: var(--tertiaryColor);
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -56,7 +58,6 @@ section {
     text-decoration: none;
     color: var(--blackColor);
 }
-
 
 * a:hover {
     text-decoration: none !important;
@@ -105,3 +106,22 @@ section {
     box-shadow: none !important;
 }
 
+.light-textured-bg {
+    background: url("../img/light-texturedbg.jpg") center / cover no-repeat;
+    height: 100% !important;
+}
+
+.dark-textured-bg {
+    background: url("../img/black-texturedbg.jpg") center / cover no-repeat;
+    height: 100% !important;
+}
+
+.default-sidebar-size {
+    min-height: 700px;
+}
+
+.dark-main-container {
+    width: 100%;
+    min-height: 100%;
+    background: var(--dark-main-gradient);
+}

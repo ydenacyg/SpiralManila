@@ -9,15 +9,50 @@ a.nav-link,
   color: white !important;
 }
 
-/* PAGE SIDEBAR & HERO */
-.hero-sidebar,
-.promo-sidebar {
-  position: relative;
+/* FOOTER */
+.bottom-footer {
+  color: white; /* for the meantime */
+  background-image: url("../img/footer-image.png");
+}
+.inline-nav {
+  list-style: none;
+  padding: 0;
 }
 
-.main {
-  height: 55rem;
+.inline-nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.inline-nav li:not(:last-child)::after {
+  content: "|";
+  margin-left: 7px;
   color: white;
+}
+
+form * p,
+h4,
+label {
+  font-family: var(--text-san-serif);
+}
+
+.form-control,
+hr {
+  color: white !important;
+}
+
+input.guests {
+  max-width: 80px;
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-control:invalid {
+  background-image: none !important;
+  padding-right: 1rem !important;
+}
+
+.bootstrap-timepicker-widget table td input {
+  width: 35px !important;
 }
 
 /* HOME PAGE */
@@ -73,7 +108,7 @@ a.nav-link,
 .card-img-overlay {
   background: linear-gradient(
     3deg,
-    #0505056b 19.46%,
+    #05050585 19.46%,
     #ffffff00 74%,
     rgba(0, 0, 0, 0) 94.72%
   );
@@ -87,74 +122,7 @@ a.nav-link,
   background: url("../img/event-dark-bg.jpg") 60% / cover no-repeat;
 }
 
-/* FOOTER */
-.bottom-footer {
-  color: white; /* for the meantime */
-  background-image: url("../img/footer-image.png");
-}
-.inline-nav {
-  list-style: none;
-  padding: 0;
-}
-
-.inline-nav li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.inline-nav li:not(:last-child)::after {
-  content: "|";
-  margin-left: 7px;
-  color: white;
-}
-
-form * p,
-h4,
-label {
-  font-family: var(--text-san-serif);
-}
-
-.form-control,
-hr {
-  color: white !important;
-}
-
-input.guests {
-  max-width: 80px;
-}
-
-.was-validated .form-control:valid,
-.was-validated .form-control:invalid {
-  background-image: none !important;
-  padding-right: 1rem !important;
-}
-
-.bootstrap-timepicker-widget table td input {
-  width: 35px !important;
-}
-
-/* PROMO PAGE */
-.promo-sidebar {
-  background: url("../img/promo-sidebar.jpg") 70% / cover no-repeat,
-    rgba(255, 255, 255, 0.808);
-}
-
-.main {
-  background: url("../img/black-texturedbg.jpg") center / cover no-repeat;
-}
-
-.main-container {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    3deg,
-    #cbb6986b 19.46%,
-    #ffffff3b 74%,
-    rgba(0, 0, 0, 0.452) 94.72%
-  );
-}
-
+/* PROMOS & HIGHLIGHTS */
 .slider-container {
   overflow: hidden;
   width: 100%;
@@ -168,13 +136,13 @@ input.guests {
 }
 
 .slide {
-  flex: 0 0 calc(40%);
+  flex: 0 0 calc(30%);
   height: 20rem;
 }
 
 .pagination {
   text-align: center;
-  margin-top: 16px;
+  margin-left: 15rem;
 }
 
 .pagination span {
@@ -201,6 +169,24 @@ input.guests {
   height: 100%;
 }
 
+.promo-slider {
+  margin-left: -15rem !important;
+}
+
+/* SAME LAYOUT - PROMOS & HIGHLIGHTS | PRIVATE DINING | PROMO SPECIFIC */
+.promos-sidebar {
+  background: var(--sidebar-gradient), url("../img/promo-sidebar.jpg") 70% / cover no-repeat;
+}
+
+.private-dining-sidebar {
+  background: var(--sidebar-gradient), url("../img/side-panel-private.jpg") 70% / cover no-repeat;
+}
+
+.promo-specific-sidebar {
+  background: var(--sidebar-gradient), url("../img/side-panel-specific.jpg") 70% / cover no-repeat;
+}
+
+
 /* DINING GUIDELINES - TAC - PRIVACY POLICY */
 .light-textured-bg img {
   width: 100%;
@@ -208,8 +194,7 @@ input.guests {
 
 .light-textured-bg {
   padding-top: 8rem;
-  background: url("../img/paper-full.jpg"),
-    linear-gradient(3deg, #dfae73 19.46%, #ffffff3b 74%, #dfae73 80.72%);
+  background: url("../img/light-texturedbg.jpg"), linear-gradient(3deg, #dfae73 19.46%, #ffffff3b 74%, #dfae73 80.72%);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -227,7 +212,6 @@ input.guests {
 
 /* md */
 @media (max-width: 767.98px) {
-  /* PROMO PAGE */
 }
 
 /* lg */
@@ -238,32 +222,20 @@ input.guests {
     height: 700px;
   }
 
-  /* PROMO PAGE */
-  .main {
-    height: 160rem !important;
-  }
-
+ /* PROMOS & HIGHLIGHTS */
   .slide {
-    flex: 0 0 calc(100% - 16px);
+    flex: 0 0 calc(100% - 2rem);
     height: 40rem;
   }
 
   .promo-slider {
-    margin-left: 5px !important;
+    margin-right: 0;
+    margin-left: 0 !important;
     margin-top: -15rem;
   }
 
   .slider-container {
     overflow: scroll;
-  }
-
-  .main-container {
-    background: linear-gradient(
-      3deg,
-      #0000006b 19.46%,
-      #0000003b 74%,
-      rgba(0, 0, 0, 0.452) 94.72%
-    );
   }
 }
 
@@ -282,10 +254,6 @@ input.guests {
 
   path {
     fill: black;
-  }
-
-  .promo-sidebar {
-    height: 700px;
   }
 
   nav {
@@ -321,10 +289,5 @@ input.guests {
     transform: scale(1.5);
     transform-origin: top center;
     height: 550px;
-  }
-
-  /* PROMO PAGE */
-  .main {
-    height: 30rem;
   }
 }

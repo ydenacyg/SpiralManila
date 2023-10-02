@@ -3,7 +3,6 @@
 
 // STICKY HEADER
 $(window).scroll(function () {
-   
     if ($(this).scrollTop() > 100) {
         $('.navbar').removeClass('bg-transparent');
         $('.navbar').addClass('bg-black'); 
@@ -18,11 +17,17 @@ $(window).scroll(function () {
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 const pagination = document.querySelector(".pagination");
+const slideWidth = slides[0].offsetWidth;
 
 let currentIndex = 0;
 
+slides.forEach((slide, index) => {
+  console.log(`Slide ${index + 1} width: ${slide.offsetWidth}px`);
+});
+
 function updateSlider() {
-  slider.style.transform = `translateX(-${currentIndex * (170 / slides.length)}%)`;
+  const slideWidth = slides[0].offsetWidth + 1 * parseFloat(getComputedStyle(slides[0]).marginRight);
+  slider.style.transform = `translateX(-${currentIndex * (slideWidth)}px)`;
 }
 
 function updatePagination() {
